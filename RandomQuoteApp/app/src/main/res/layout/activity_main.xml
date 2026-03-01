@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvQuote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quote will appear here"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Author"
+        android:textSize="18sp"
+        android:textColor="#777777"
+        android:gravity="center"
+        android:layout_below="@id/tvQuote"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next quote in 5s"
+        android:textSize="14sp"
+        android:textColor="#888888"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvAuthor"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/btnNewQuote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Quote"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"/>
+
+</RelativeLayout>
